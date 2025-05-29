@@ -44,3 +44,30 @@ if (userMembership !== "gold") {
     // show premium content
     console.log("Welcome to the premium content section!");
 }
+
+
+
+// Learning how to use logical operators
+let todayDate;
+let birthdayDate;
+let birthdayDisplayed;
+
+// And logical operator is expressed as &&
+// Both conditions have to be true for the code inside the if statement to run
+if (todayDate === birthdayDate && birthdayDisplayed === true) {
+    console.log("Happy Birthday!");
+} else {
+    // Do not display birthday message
+}
+
+// Or logical operator is expressed as ||
+// If either of the conditions is true, the code inside the if statement will run
+if (todayDate === birthdayDate || birthdayDisplayed === true) {
+    console.log("Happy Birthday!");
+}
+
+// Not or negation logical operator is expressed as !
+// If the condition is false, the code inside the if statement will run
+if (!(todayDate === birthdayDate)) {
+    console.log("Today is not your birthday!");
+}
