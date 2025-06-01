@@ -35,7 +35,7 @@ if (totalPrice <= 10) {
     shippingCost = 0;
 }
 
- console.log("The shipping cost for you is " + shippingCost);
+ console.log(`The shipping cost for you is $${shippingCost}`);
 
 
 
