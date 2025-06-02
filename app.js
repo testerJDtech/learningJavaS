@@ -8,12 +8,29 @@ console.log(name);
 console.log(name + " is a meady brand!");
 
 
-// Learning how to use condiitonal statements // if else statements
 let totalPrice = 19;
 let shippingCost;
 
+// Learning how to create and use functions
+function calculateShippingCost() {
+    // This is where the code block weill be contained where the function references
+    if (totalPrice <= 10) {
+        shippingCost = 5;
+    // you can write conditional statements in else if statements as well
+    } else if (totalPrice <= 20) {
+        shippingCost = 3;
+    } else {
+        shippingCost = 0;
+    }
+    
+    console.log(`The shipping cost for you is $${shippingCost}`);
+}
+
+// This is how to call a functiion to start the code block inside the function
+calculateShippingCost(); 
+
 // whatever is inside the if statement is called the condiition. It is either goign to be met or not met
-if (totalPrice > 20) {
+if (totalPrice > 20) {s
     shippingCost = 0;
 } else {
     shippingCost = 5;
@@ -25,17 +42,6 @@ if (totalPrice <= 20) {
 } else {
     shippingCost = 0;
 }
-
-if (totalPrice <= 10) {
-    shippingCost = 5;
-// you can write conditional statements in else if statements as well
-} else if (totalPrice <= 20) {
-    shippingCost = 3;
-} else {
-    shippingCost = 0;
-}
-
- console.log(`The shipping cost for you is $${shippingCost}`);
 
 
 
